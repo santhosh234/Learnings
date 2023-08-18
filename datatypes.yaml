@@ -1,0 +1,39 @@
+#String Variables
+myself: Santhosh S
+fruit: "apple"
+job: "Devops engineer"
+
+bio: | # this | defines to print the sentence in the nextline
+hey i am nice dude
+
+#write a single line in multiple lines
+message: > 
+this will 
+all be
+in a single line
+
+#same as
+message: this will be in a single line
+
+#Int, float, booleanValue
+number: 5473
+marks: 98.76
+booleanvalue: No # n, N, false, False, FALSE
+
+#specify the type(in order to specify a type, you put !! and after this give the datatype)
+zero: !!int 0
+positivenum: !!int 45
+negativenum: !!int -45
+
+#floating point numbers
+marks: !!float 56.89
+infinite: !!float .inf
+not a num: .nan
+
+#null
+surname: !!null Null #null or NULL 
+~: this is a null key
+
+#dates and time
+date: !!timestamp 2023-08-18 
+india time: 2001-12-15T02

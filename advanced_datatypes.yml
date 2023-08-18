@@ -1,0 +1,44 @@
+#lists is written down as a sequence
+student: !!seq
+- marks
+- name 
+- roll_no
+
+# like this also
+cities: [new delhi, mumbai]
+
+#some of the keys of the seq will be empty
+# nested sequence
+- 
+ - mango
+ - apple
+ - banana
+-
+ - marks
+ - roll num
+ - date
+
+# key: value pairs are called maps
+!!maps
+
+#nested mappings: map within an map
+name: santhosh S
+role: { age: 78, job: student}
+
+#pairs: keys may have duplicate values
+# !!pairs
+pair example: !!pairs
+ - job: student
+ - job: teacher
+
+# same as
+pair example: !!pairs [job: student, job: teacher]
+#this will be am array of hashtables
+
+#dictionary !!omap
+people: !!omap
+ - kunal:
+     name: santhosh
+
+
+
